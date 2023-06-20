@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Edit Post</h2>
+  <form [formGroup]="editForm">
+    <label for="title">Title:</label>
+    <input class="form-control" type="text" placeholder="Enter title of post" formControlName="title">
+    <br>
+    <label for="body">Body:</label>
+    <input class="form-control" type="text" placeholder="Enter content of post" formControlName="body">
+    <br>
+    <button type="button" (click)="EditPost()" class="btn btn-primary">Submit Post</button>
+  </form>
+
+</div>
